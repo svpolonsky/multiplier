@@ -1,27 +1,20 @@
-# test vectors for unsigned integer multiplier: z=x*y
+###########################################################
+### test vectors for unsigned integer multiplier: z=x*y ###
+###########################################################
+
 # number of input binary digits (output is a double)
 width=328
-#width=10
 # number of test vectors
 addr_width=4
 num_vectors = 2**addr_width
 
-
-
-#from inspect import getsourcefile
-#import os
 from random import randrange
-
 
 def ConvertToBinary(num,width):
     return(bin(num).replace('0b','').zfill(width))
 
-
-
-
 MAX_NUMBER = 2**width-1
-print(MAX_NUMBER)
-#print(os.path.dirname(getsourcefile(lambda:0)))os.lseek
+
 with open("xvectors.mem","w") as xvectors, open("yvectors.mem","w") as yvectors, open("zvectors.mem","w") as zvectors:
     for i in range(num_vectors):
         x = randrange(0,MAX_NUMBER)
