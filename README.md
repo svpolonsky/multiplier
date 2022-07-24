@@ -1,6 +1,6 @@
 # Micro-architecture of a multiplier
 
-* Approach: Karatsuba [algorithm] (https://en.wikipedia.org/wiki/Karatsuba_algorithm)
+* Approach: Karatsuba algorithm (https://en.wikipedia.org/wiki/Karatsuba_algorithm)
 
 * Language: SystemVerilog
 

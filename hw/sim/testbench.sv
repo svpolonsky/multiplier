@@ -21,9 +21,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module testbench();
+
     logic clk;
     parameter CLK_PERIOD = 10;
-    
 
     initial begin
         clk <= 1'b0;
